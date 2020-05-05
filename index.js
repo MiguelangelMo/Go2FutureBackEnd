@@ -26,6 +26,6 @@ app.use("/data/task", require("./routes/task"));
 
 // the variable PORT is declared because heroko recognizes it like this and port 4000 is declared, 
 // any port that does not affect the system can be declared
-const PORT = process.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 
-app.listen(PORT, () => { console.log(`Arranco el sistema en puerto: ${PORT}`) })
+app.listen(port, '0.0.0.0', () => { console.log(`Arranco el sistema en puerto: ${port}`) })
